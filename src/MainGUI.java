@@ -1,14 +1,29 @@
 package src;
 
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.SwingUtilities;
 
 import enumetation.EnumCategoryTicket;
 import enumetation.EnumGenderMovie;
 import enumetation.EnumTypeTicket;
-
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MainGUI extends JFrame {
     // Componentes da interface
@@ -76,6 +91,8 @@ public class MainGUI extends JFrame {
         panel.add(capacidadeField);
 
         panel.add(new JLabel("Tipo:"));
+
+        // TODO: Criar enum dos tipos da sala
         JComboBox<String> tipoCombo = new JComboBox<>(new String[] { "Normal", "3D", "VIP" });
         panel.add(tipoCombo);
 
@@ -136,10 +153,12 @@ public class MainGUI extends JFrame {
         panel.add(categoriaCombo);
 
         panel.add(new JLabel("Tipo:"));
+        // TODO: Se o ingresso for meia, conferir se realmente tem direito ao desconto
         JComboBox<EnumTypeTicket> tipoCombo = new JComboBox<>(EnumTypeTicket.values());
         panel.add(tipoCombo);
 
         panel.add(new JLabel("Sessão:"));
+        // TODO: Consultar as sessões disponíveis
         JComboBox<String> sessaoCombo = new JComboBox<>(new String[] { "Sessão 1", "Sessão 2" });
         panel.add(sessaoCombo);
 

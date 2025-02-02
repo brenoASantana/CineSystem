@@ -1,9 +1,10 @@
 package enumetation;
 
 public enum EnumGenderMovie {
-    ACTION,
-    ADVENTURE,
+    AÇÃO,
+    AVENTURA,
     SUSPENSE,
-    COMEDY,
-    DRAMA
+    COMÉDIA,
+    DRAMA,
+    OUTROS
 }

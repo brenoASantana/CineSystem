@@ -1,6 +1,6 @@
 package enumetation;
 
 public enum EnumTypeTicket {
-    HALF_TICKET,
-    WHOLE_TICKET
+    MEIA_INGRESSO,
+    INTEIRA_INGRESSO
 }
