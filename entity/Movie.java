@@ -18,7 +18,6 @@ public class Movie {
     }
 
     public int getDuration() {
-
         return duration;
     }
 

@@ -15,7 +15,6 @@ public class Actor {
 
     public String getActorRole() {
         return actorRole;
-
     }
 
     public void setName(String name) {
